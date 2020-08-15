@@ -26,8 +26,8 @@ class Content(Mapping):
         return self.data["type"] if "type" in self.data else None
 
     @type.setter
-    def type(self, new_type):
-        self.data["type"] = new_type
+    def type(self, type):
+        self.data["type"] = type
 
     def __getitem__(self, key):
         return self.data[key]
